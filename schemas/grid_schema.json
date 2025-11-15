@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Grid Schema",
+  "type": "object",
+  "required": ["x_lines", "y_lines"],
+  "properties": {
+    "name": {"type": "string"},
+    "x_lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {"type": "string"},
+          "coordinate": {"type": "number"}
+        },
+        "required": ["label", "coordinate"]
+      }
+    },
+    "y_lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {"type": "string"},
+          "coordinate": {"type": "number"}
+        },
+        "required": ["label", "coordinate"]
+      }
+    },
+    "z_levels": {
+      "type": "array"
+    }
+  }
+}

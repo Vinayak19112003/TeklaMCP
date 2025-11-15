@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Building Schema",
+  "description": "Complete building model schema",
+  "type": "object",
+  "required": ["metadata", "grid", "elements"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "project_number": {"type": "string"},
+        "design_code": {"type": "string"},
+        "units": {"type": "string", "default": "mm"},
+        "created": {"type": "string", "format": "date-time"},
+        "ai_generated": {"type": "boolean"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "grid": {"$ref": "#/definitions/grid"},
+    "elements": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/element"}
+    },
+    "connections": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/connection"}
+    },
+    "loads": {"$ref": "#/definitions/loading_schedule"}
+  },
+  "definitions": {
+    "grid": {
+      "type": "object",
+      "required": ["x_lines", "y_lines"],
+      "properties": {
+        "name": {"type": "string"},
+        "x_lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {"type": "string"},
+              "coordinate": {"type": "number"}
+            }
+          }
+        },
+        "y_lines": {"type": "array"},
+        "z_levels": {"type": "array"}
+      }
+    },
+    "element": {
+      "type": "object",
+      "required": ["id", "type", "profile", "material"],
+      "properties": {
+        "id": {"type": "string"},
+        "type": {"type": "string", "enum": ["column", "beam", "brace"]},
+        "profile": {"type": "object"},
+        "material": {"type": "object"},
+        "start_point": {"$ref": "#/definitions/point3d"},
+        "end_point": {"$ref": "#/definitions/point3d"}
+      }
+    },
+    "connection": {
+      "type": "object"
+    },
+    "loading_schedule": {
+      "type": "object"
+    },
+    "point3d": {
+      "type": "object",
+      "properties": {
+        "x": {"type": "number"},
+        "y": {"type": "number"},
+        "z": {"type": "number"}
+      }
+    }
+  }
+}
