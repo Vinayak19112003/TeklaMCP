@@ -1,5 +1,18 @@
 # AI-Powered Tekla Structures Model Generator
 
+## 🎯 **NEW USER? START HERE!**
+
+**👉 [Read START_HERE.md](START_HERE.md) first!** 👈
+
+START_HERE.md will guide you through all the documentation in the right order, with clear learning paths for beginners, technical users, and everyone in between.
+
+**Quick paths:**
+- **Complete Beginner?** → [START_HERE.md](START_HERE.md) → [WHY_USE_THIS.md](WHY_USE_THIS.md) → [QUICK_START.md](QUICK_START.md)
+- **Just want to try it?** → [QUICK_START.md](QUICK_START.md) (15 minutes)
+- **Need full details?** → [USER_MANUAL.md](USER_MANUAL.md) (complete guide)
+
+---
+
 ## 🏗️ Overview
 
 An intelligent system that automatically generates complete Tekla Structures 3D models from natural language descriptions, PDF drawings, images, and engineering specifications.
@@ -204,13 +217,36 @@ public class BuildingGenerator {
 
 ---
 
+## 📚 Documentation Index
+
+**All documentation is organized for easy navigation:**
+
+| Document | Purpose | Time | For Who |
+|----------|---------|------|---------|
+| **[START_HERE.md](START_HERE.md)** | 🎯 Navigation guide - Start here! | 5 min | Everyone |
+| **[WHY_USE_THIS.md](WHY_USE_THIS.md)** | Why TeklaMCP vs direct AI? | 5 min | Everyone |
+| **[QUICK_START.md](QUICK_START.md)** | Get running in 15 minutes | 15 min | Beginners |
+| **[USER_MANUAL.md](USER_MANUAL.md)** | Complete setup & usage guide | 1 hour | Beginners |
+| **[GETTING_STARTED.md](GETTING_STARTED.md)** | Technical quick start | 30 min | Intermediate |
+| **[ARCHITECTURE.md](ARCHITECTURE.md)** | System design & components | 45 min | Advanced |
+| **[PIPELINE.md](PIPELINE.md)** | Data flow & processing | 30 min | Advanced |
+| **[IMPLEMENTATION_GUIDE.md](IMPLEMENTATION_GUIDE.md)** | Developer guide | 1 hour | Developers |
+| **[DESIGN_SUMMARY.md](DESIGN_SUMMARY.md)** | Executive summary & ROI | 30 min | All |
+| **[ACCURACY_ANALYSIS.md](ACCURACY_ANALYSIS.md)** | AI accuracy (75-90%) | 20 min | All |
+
+**Recommended reading order:** See [START_HERE.md](START_HERE.md) for personalized learning paths.
+
+---
+
 ## 🚀 Quick Start
+
+**For detailed setup instructions, see [QUICK_START.md](QUICK_START.md) or [USER_MANUAL.md](USER_MANUAL.md)**
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourrepo/TeklaMCP.git
+git clone https://github.com/Vinayak19112003/TeklaMCP.git
 cd TeklaMCP
 
 # Install Python dependencies
@@ -269,6 +305,8 @@ result = generator.modify("""
 # Regenerate and execute
 result.execute_in_tekla()
 ```
+
+**📖 For complete examples, see [USER_MANUAL.md Section 6](USER_MANUAL.md) and the `examples/` folder.**
 
 ---
 
@@ -769,11 +807,26 @@ MIT License - see [LICENSE](LICENSE) for details
 
 ---
 
-## 📞 Support
+## 📞 Support & Help
 
-- **Documentation**: [Full docs](docs/)
-- **Issues**: [GitHub Issues](https://github.com/yourrepo/TeklaMCP/issues)
-- **Email**: support@teklaaai.com
+**Need help? Check these resources:**
+
+1. **📖 Documentation Navigation**: [START_HERE.md](START_HERE.md) - Find the right doc for your question
+2. **❓ Common Questions**: [USER_MANUAL.md Section 9](USER_MANUAL.md) - FAQ section
+3. **🔧 Troubleshooting**: [USER_MANUAL.md Section 10](USER_MANUAL.md) - Fix common errors
+4. **💡 Examples**: `examples/` folder - Working code samples
+5. **🐛 Issues**: [GitHub Issues](https://github.com/Vinayak19112003/TeklaMCP/issues) - Report bugs
+
+**Quick Help Reference:**
+
+| Problem | Read This |
+|---------|-----------|
+| "Why use this?" | [WHY_USE_THIS.md](WHY_USE_THIS.md) |
+| "How to install?" | [USER_MANUAL.md Sections 3-5](USER_MANUAL.md) |
+| "Error when running" | [USER_MANUAL.md Section 10](USER_MANUAL.md) |
+| "How does it work?" | [PIPELINE.md](PIPELINE.md) |
+| "API key issues" | [USER_MANUAL.md Section 4](USER_MANUAL.md) |
+| "First model" | [USER_MANUAL.md Section 6](USER_MANUAL.md) |
 
 ---
 
