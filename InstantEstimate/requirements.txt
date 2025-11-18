@@ -1,0 +1,20 @@
+# InstantEstimate - AI-Powered Structural Cost Estimation
+# Python 3.10+
+
+# Core dependencies
+streamlit==1.31.0
+pandas==2.2.0
+openpyxl==3.1.2
+
+# PDF generation
+reportlab==4.0.9
+
+# API and utilities
+requests==2.31.0
+
+# Additional utilities
+python-dateutil==2.8.2
+Pillow==10.2.0
+
+# For enhanced Streamlit features
+plotly==5.18.0
